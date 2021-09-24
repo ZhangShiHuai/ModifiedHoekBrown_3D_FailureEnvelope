@@ -1,4 +1,6 @@
 # 3D_FailureEnvelope_ModifiedHoekBrown
+Written by Shihuai Zhang.
+
 This MATLAB script plots three-dimensional failure envelop in the principal stress space. For more information, please refer to the following paper:
 
 (i) Wu, S., Zhang, S., & Zhang, G. (2018). Three-dimensional strength estimation of intact rocks using a modified Hoek-Brown criterion based on a new deviatoric function. International Journal of Rock Mechanics and Mining Sciences, 107, 181-190.
