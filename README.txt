@@ -15,7 +15,7 @@ The new Hoek-Brown criterion enables a 3D failure envelop based only on conventi
 
 Specifically, this package includes:
   1) Fitting strength parameters according to peak strength data. (File: Fitting_Para.m)
-  2) Plot 3D failure envelope in the principal stress space. (File: 3D_Envelope.m)
+  2) Plot 3D failure envelope in the principal stress space. (File: ThreeDimen_Envelope.m)
   3) Plot different deviatoric (pi) planes along the hydrostatic axis, and project them onto the 2D plane. (File: Pi_Plane.m)
   4) Plot SqrtJ2 - I1 relationship and quantify the fittness error. (File: SqrtJ2_I1.m)
   5) Plot the effect of Sigma2 on strength. (File: IntermediateStress.m)
