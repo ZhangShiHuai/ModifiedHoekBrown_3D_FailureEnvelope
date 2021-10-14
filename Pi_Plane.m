@@ -9,7 +9,7 @@ hold on
     z=sqrt(2/3).*rho.*sin(theta_draw_dev+pi*2/3)+I1_draw1/3;%sigma1
     x=sqrt(2/3).*rho.*sin(theta_draw_dev)+I1_draw1/3;%sigma2
     y=sqrt(2/3).*rho.*sin(theta_draw_dev-pi*2/3)+I1_draw1/3;%sigma3
-    plot3(x,y,z,'k','linewidth',1)
+    plot3(x,y,z,'r','linewidth',2)
 end   
 %h=allchild(gca); 
 %rotate(h,[0 0 1],-80);
