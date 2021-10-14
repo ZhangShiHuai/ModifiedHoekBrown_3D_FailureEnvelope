@@ -9,7 +9,7 @@ for i=1:mm
             break
          end
         
-        plot(sigma2_temp,sigma1_temp,'.g','MarkerSize',1)
+        plot(sigma2_temp,sigma1_temp,'.b','MarkerSize',1)
         hold on
     end
     
