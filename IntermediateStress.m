@@ -17,9 +17,9 @@ end
 hold on
 plot([0,500],[0,500])
 %
-plot(sigma2(1:21),sigma1(1:21),'mo')
+plot(sigma2(1:21),sigma1(1:21),'ro')
 hold on
-plot(sigma2(22:41),sigma1(22:41),'go')
+plot(sigma2(22:41),sigma1(22:41),'bo')
 hold on           
            
            
