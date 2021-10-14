@@ -1,7 +1,7 @@
 # 3D_FailureEnvelope_ModifiedHoekBrown
 Written by Shihuai Zhang.
 
-This MATLAB script plots three-dimensional failure envelop in the principal stress space. For more information, please refer to the following papers:
+This MATLAB script plots three-dimensional failure envelope in the principal stress space. For more information, please refer to the following papers:
 
 (i) Wu, S., Zhang, S., Guo, C., & Xiong, L. (2017). A generalized nonlinear failure criterion for frictional materials. Acta Geotechnica, 12(6), 1353-1371.
 
