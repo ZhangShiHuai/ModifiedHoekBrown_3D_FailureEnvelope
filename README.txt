@@ -10,7 +10,7 @@ This MATLAB script plots three-dimensional failure envelop in the principal stre
 (iii) Zhang, S., Wu, S., & Zhang, G. (2020). Strength and deformability of a low-porosity sandstone under true triaxial compression conditions. International Journal of Rock Mechanics and Mining Sciences, 127, 104204.
 
 
-The new Hoek-Brown criterion enables a 3D failure envelop based only on conventional triaxial compression tests. In this package, I provide the peak strength data of Zigong sandstone from Reference(ii) as a demo.
+The new Hoek-Brown criterion enables a 3D failure envelop based only on conventional triaxial compression tests. In this package, I provide the peak strength data of Zigong sandstone from Reference(iii) as a demo.
 
 
 Specifically, this package includes:
