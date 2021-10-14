@@ -11,8 +11,9 @@ hold on
     y=sqrt(2/3).*rho.*sin(theta_draw_dev-pi*2/3)+I1_draw1/3;%sigma3
     plot3(x,y,z,'k','linewidth',1)
 end   
-  h=allchild(gca); 
+%h=allchild(gca); 
 %rotate(h,[0 0 1],-80);
+view(45,30)
 axis equal
 %% PI plane projection
 figure
