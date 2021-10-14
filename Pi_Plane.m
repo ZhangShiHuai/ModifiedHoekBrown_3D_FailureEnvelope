@@ -12,7 +12,7 @@ hold on
     plot3(x,y,z,'k','linewidth',1)
 end   
   h=allchild(gca); 
-rotate(h,[0 0 1],-80);
+%rotate(h,[0 0 1],-80);
 axis equal
 %% PI plane projection
 figure
