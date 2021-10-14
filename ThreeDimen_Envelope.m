@@ -37,8 +37,8 @@ hold on
 plot3(sigma2(22:41),sigma3(22:41),sigma1(22:41),'.b','linewidth',3,'MarkerSize',10);
 hold on
 plot3([0,500],[0,500],[0,500])
-h=allchild(gca); 
-rotate(h,[0 0 1],-80);
+%h=allchild(gca); 
+%rotate(h,[0 0 1],-80);
 
 
 
