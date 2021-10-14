@@ -39,6 +39,6 @@ hold on
 plot3([0,500],[0,500],[0,500])
 %h=allchild(gca); 
 %rotate(h,[0 0 1],-80);
-
+view(45,30)
 
 
