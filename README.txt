@@ -21,7 +21,7 @@ Specifically, this package includes:
   5) Plot the effect of Sigma2 on strength. (File: IntermediateStress.m)
 
 
-
+[![View ModifiedHoekBrown_3DFailureEnvelope on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/100631-modifiedhoekbrown_3dfailureenvelope)
 
 
 
