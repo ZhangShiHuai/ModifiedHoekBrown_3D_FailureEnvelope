@@ -13,8 +13,8 @@ hold on
 end   
 %h=allchild(gca); 
 %rotate(h,[0 0 1],-80);
-view(45,30)
 axis equal
+view(45,30)
 %% PI plane projection
 figure
 polar(pi/2*ones(500,1),(1:1:500)','-')
