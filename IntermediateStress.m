@@ -16,11 +16,16 @@ for i=1:mm
 end
 hold on
 plot([0,500],[0,500])
-%
+% true triaxial data
+plot(sigma2(22:41),sigma1(22:41),'bo')
+hold on 
+% conventional triaxial data
 plot(sigma2(1:21),sigma1(1:21),'ro')
 hold on
-plot(sigma2(22:41),sigma1(22:41),'bo')
-hold on           
+sigma3_draw = linspace(0,80,1000)';
+sigma1_draw = sigma3_draw + sqrt(mi_best*ucs*sigma3_draw+ucs^2);
+plot(sigma3_draw,sigma1_draw,'r-','LineWidth',1)
+          
            
            
            
