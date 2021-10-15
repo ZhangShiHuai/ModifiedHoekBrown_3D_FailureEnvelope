@@ -32,7 +32,7 @@ hold on
 h4 = plot(sigma2(22:41),sigma1(22:41),'bo');
 hold on           
 
-% fugure setting
+% figure setting
 xlabel('\sigma_{2} (MPa)')
 ylabel('\sigma_{1} (MPa)')
 set(gca,'xtick',[0:100:500],'xlim',[0,500],'ytick',[0:100:500],'ylim',[0,500])
