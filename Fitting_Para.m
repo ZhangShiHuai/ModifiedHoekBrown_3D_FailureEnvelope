@@ -35,7 +35,7 @@ tao_oct_draw=linspace(0,200,10000);
 sigma_m2_draw=9*tao_oct_draw.^2/(mi_best*2*ucs)+3*tao_oct_draw/(2*sqrt(2))-ucs/mi_best;
 plot(sigma_m2_draw,tao_oct_draw,'k','linewidth',1)
 
-% fugure setting
+% figure setting
 xlabel('\sigma_{m,2} (MPa)')
 ylabel('\tau_{\itoct} (MPa)')
 set(gca,'xtick',[-50:50:350],'xlim',[-50,350],'ytick',[0:20:200],'ylim',[0,200])
