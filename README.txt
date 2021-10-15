@@ -1,7 +1,7 @@
 # ModifiedHoekBrown_3D_FailureEnvelope
 Written by Shihuai Zhang.
 
-This MATLAB script plots three-dimensional failure envelop in the principal stress space. For more information, please refer to the following papers:
+This MATLAB script plots three-dimensional failure envelope in the principal stress space. For more information, please refer to the following papers:
 
 (i) Wu, S., Zhang, S., Guo, C., & Xiong, L. (2017). A generalized nonlinear failure criterion for frictional materials. Acta Geotechnica, 12(6), 1353-1371.
 
@@ -10,7 +10,7 @@ This MATLAB script plots three-dimensional failure envelop in the principal stre
 (iii) Zhang, S., Wu, S., & Zhang, G. (2020). Strength and deformability of a low-porosity sandstone under true triaxial compression conditions. International Journal of Rock Mechanics and Mining Sciences, 127, 104204.
 
 
-The new Hoek-Brown criterion enables a 3D failure envelop based only on conventional triaxial compression tests. In this package, I provide the peak strength data of Zigong sandstone from Reference(iii) as a demo.
+The new Hoek-Brown criterion enables a 3D failure envelope based only on conventional triaxial compression tests. In this package, I provide the peak strength data of Zigong sandstone from Reference(iii) as a demo.
 
 
 Specifically, this package includes:
