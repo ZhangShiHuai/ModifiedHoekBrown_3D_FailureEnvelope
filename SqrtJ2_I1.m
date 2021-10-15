@@ -12,7 +12,7 @@ plot(I1_draw,sqrtJ2min_draw,'k--','linewidth',1)
 hold on
 plot([0,0],[0,250],'k:','linewidth',1)
 
-% fugure setting
+% figure setting
 xlabel('$\mathit{I_{\mathrm{1} } } \mathrm{(MPa)}$','Interpreter','latex')
 ylabel('$\sqrt{\mathit{J}_{2}  } \mathrm{(MPa)}$','Interpreter','latex')
 %ylabel('\surd\itJ_{\rm2}\rm(MPa)')
