@@ -38,7 +38,7 @@ h2 = plot3(sigma2(22:41),sigma3(22:41),sigma1(22:41),'.b','linewidth',3,'MarkerS
 hold on
 plot3([0,450],[0,450],[0,450],'k-','linewidth',1)
 
-% fugure setting
+% figure setting
 xlabel({'\sigma_{2} (MPa)'},'rotation',-30)%,'Position',[100 -200 00]);
 ylabel({'\sigma_{3} (MPa)'},'rotation',30)%,'Position',[-500/4 100 0]);
 zlabel('\sigma_{1} (MPa)')
