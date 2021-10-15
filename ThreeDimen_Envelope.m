@@ -27,18 +27,24 @@ for i=1:length(I1_draw)
  end
 %% Plot figure
 figure
-surf(X,Y,Z);
+mesh(X,Y,Z,'edgecolor',[0.8 0.8 0.8]);
 axis equal;
 grid off;axis on;
 hold on
 %
-plot3(sigma2(1:21),sigma3(1:21),sigma1(1:21),'.r','linewidth',3,'MarkerSize',10);
+h1 = plot3(sigma2(1:21),sigma3(1:21),sigma1(1:21),'.r','linewidth',3,'MarkerSize',10);
 hold on
-plot3(sigma2(22:41),sigma3(22:41),sigma1(22:41),'.b','linewidth',3,'MarkerSize',10);
+h2 = plot3(sigma2(22:41),sigma3(22:41),sigma1(22:41),'.b','linewidth',3,'MarkerSize',10);
 hold on
-plot3([0,500],[0,500],[0,500])
-%h=allchild(gca); 
-%rotate(h,[0 0 1],-80);
+plot3([0,450],[0,450],[0,450],'k-','linewidth',1)
+
+% fugure setting
+xlabel({'\sigma_{2} (MPa)'},'rotation',-30)%,'Position',[100 -200 00]);
+ylabel({'\sigma_{3} (MPa)'},'rotation',30)%,'Position',[-500/4 100 0]);
+zlabel('\sigma_{1} (MPa)')
+set(gca,'xtick',[0:200:700],'xlim',[-20,700],'ytick',[0:200:700],'ylim',[-20,700],'ztick',[0:200:700],'zlim',[-20,700])
+text(400,400,500,'Hydrostatic axis','HorizontalAlignment','left','FontSize',12,'Fontname', 'Times New Roman')
+set(gca,'FontSize',12,'Fontname', 'Times New Roman')
+set(gcf,'unit','centimeters','position',[33 14 13 10])
+box on
 view(45,30)
-
-

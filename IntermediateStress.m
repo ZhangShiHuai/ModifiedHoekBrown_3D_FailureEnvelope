@@ -9,13 +9,13 @@ for i=1:mm
             break
          end
         
-        plot(sigma2_temp,sigma1_temp,'.b','MarkerSize',1)
+        h1 = plot(sigma2_temp,sigma1_temp,'.-b','MarkerSize',1);
         hold on
     end
     
 end
 hold on
-plot([0,500],[0,500])
+plot([0,500],[0,500],'k')
 % true triaxial data
 plot(sigma2(22:41),sigma1(22:41),'bo')
 hold on 
@@ -24,8 +24,22 @@ plot(sigma2(1:21),sigma1(1:21),'ro')
 hold on
 sigma3_draw = linspace(0,80,1000)';
 sigma1_draw = sigma3_draw + sqrt(mi_best*ucs*sigma3_draw+ucs^2);
-plot(sigma3_draw,sigma1_draw,'r-','LineWidth',1)
-          
-           
-           
-           
+h2 = plot(sigma3_draw,sigma1_draw,'r-','LineWidth',1);
+
+%
+h3 = plot(sigma2(1:21),sigma1(1:21),'ro');
+hold on
+h4 = plot(sigma2(22:41),sigma1(22:41),'bo');
+hold on           
+
+% fugure setting
+xlabel('\sigma_{2} (MPa)')
+ylabel('\sigma_{1} (MPa)')
+set(gca,'xtick',[0:100:500],'xlim',[0,500],'ytick',[0:100:500],'ylim',[0,500])
+legend([h3,h4,h2,h1],'Conventional triaxial test','True triaxial test','Best fitting envelope','Best fitting envelope','location','southeast')
+legend boxoff
+text(100,80,'\sigma_{3}=0MPa','HorizontalAlignment','left','FontSize',12,'Fontname', 'Times New Roman')
+text(240,200,'20MPa','HorizontalAlignment','left','FontSize',12,'Fontname', 'Times New Roman')
+text(300,400,'60MPa','HorizontalAlignment','left','FontSize',12,'Fontname', 'Times New Roman')
+set(gca,'FontSize',12,'Fontname', 'Times New Roman')
+set(gcf,'unit','centimeters','position',[33 14 13 10])
