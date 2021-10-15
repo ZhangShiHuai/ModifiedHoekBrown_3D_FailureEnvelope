@@ -1,4 +1,4 @@
-# 3D_FailureEnvelope_ModifiedHoekBrown
+# ModifiedHoekBrown_3D_FailureEnvelope
 Written by Shihuai Zhang.
 
 This MATLAB script plots three-dimensional failure envelop in the principal stress space. For more information, please refer to the following papers:
