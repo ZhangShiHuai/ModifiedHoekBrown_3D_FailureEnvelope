@@ -12,16 +12,16 @@ plot(I1_draw,sqrtJ2min_draw,'k--','linewidth',1)
 hold on
 plot([0,0],[0,250],'k:','linewidth',1)
 
-% figure setting
+% fugure setting
 xlabel('$\mathit{I_{\mathrm{1} } } \mathrm{(MPa)}$','Interpreter','latex')
 ylabel('$\sqrt{\mathit{J}_{2}  } \mathrm{(MPa)}$','Interpreter','latex')
 %ylabel('\surd\itJ_{\rm2}\rm(MPa)')
 
-set(gca,'xtick',[-200:200:1000],'xlim',[-200,1000],'ytick',[0:50:250],'ylim',[0,250])
-legend('Conventional triaxial test','True triaxial test','Best fitting curve \it\theta_{\it\sigma}\rm=-30\circ','Best fitting curve \it\theta_{\it\sigma}\rm=30\circ','location','southeast')
+set(gca,'xtick',(-200:200:1000),'xlim',[-200,1000],'ytick',(0:50:250),'ylim',[0,250])
+legend('Conventional triaxial test','True triaxial test','Best-fit curve \it\theta_{\it\sigma}\rm=-30\circ','Best-fit curve \it\theta_{\it\sigma}\rm=30\circ','location','southeast')
 legend boxoff
 set(gca,'FontSize',12,'Fontname', 'Times New Roman')
-set(gcf,'unit','centimeters','position',[33 14 13 10])
+set(gcf,'unit','centimeters','position',[15 10 13 10])
 %% Quantify prediction error
 sqrtJ2max_pre=(-mi_best*ucs+sqrt((mi_best*ucs)^2+12*mi_best*ucs*I1+36*ucs^2))/(6*sqrt(3)); % '_pre' denotes prediction.
 sqrtJ2min_pre=(-mi_best*ucs+sqrt((mi_best*ucs)^2+3*mi_best*ucs*I1+9*ucs^2))/(3*sqrt(3));

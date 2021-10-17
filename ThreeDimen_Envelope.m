@@ -38,13 +38,30 @@ h2 = plot3(sigma2(22:41),sigma3(22:41),sigma1(22:41),'.b','linewidth',3,'MarkerS
 hold on
 plot3([0,450],[0,450],[0,450],'k-','linewidth',1)
 
-% figure setting
+% fugure setting
 xlabel({'\sigma_{2} (MPa)'},'rotation',-30)%,'Position',[100 -200 00]);
 ylabel({'\sigma_{3} (MPa)'},'rotation',30)%,'Position',[-500/4 100 0]);
 zlabel('\sigma_{1} (MPa)')
-set(gca,'xtick',[0:200:700],'xlim',[-20,700],'ytick',[0:200:700],'ylim',[-20,700],'ztick',[0:200:700],'zlim',[-20,700])
+set(gca,'xtick',(0:200:700),'xlim',[-20,700],'ytick',(0:200:700),'ylim',[-20,700],'ztick',(0:200:700),'zlim',[-20,700])
 text(400,400,500,'Hydrostatic axis','HorizontalAlignment','left','FontSize',12,'Fontname', 'Times New Roman')
 set(gca,'FontSize',12,'Fontname', 'Times New Roman')
-set(gcf,'unit','centimeters','position',[33 14 13 10])
+set(gcf,'unit','centimeters','position',[15 10 13 10])
 box on
 view(45,30)
+%% plot the variation of the deviatoric plane along the hydrostatic axis
+
+for int=10:10:60
+    
+hold on
+  I1_draw1=I1_draw(int);
+    theta_draw_dev=linspace(0,2*pi,10000);
+    rho=sqrt(2)*sqrtJ2max(int)*sin(alpha(int)*pi/3-asin(A(int))/3)./sin(alpha(int)*pi/3+asin(A(int)*sin(3*theta_draw_dev))/3);  
+    z=sqrt(2/3).*rho.*sin(theta_draw_dev+pi*2/3)+I1_draw1/3;%sigma1
+    x=sqrt(2/3).*rho.*sin(theta_draw_dev)+I1_draw1/3;%sigma2
+    y=sqrt(2/3).*rho.*sin(theta_draw_dev-pi*2/3)+I1_draw1/3;%sigma3
+    plot3(x,y,z,'k','linewidth',1)
+end
+
+axis equal
+view(45,30)
+legend([h1,h2],'Conventional triaxial test','True triaxial test','location','northeast')
