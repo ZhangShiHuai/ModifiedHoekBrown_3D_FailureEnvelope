@@ -20,8 +20,7 @@ Specifically, this package includes:
   4) Plot SqrtJ2 - I1 relationship and quantify the fittness error. (File: SqrtJ2_I1.m)
   5) Plot the effect of Sigma2 on strength. (File: IntermediateStress.m)
 
-
-[![View ModifiedHoekBrown_3D_FailureEnvelope on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/100711-modifiedhoekbrown_3d_failureenvelope)
+[![View ModifiedHoekBrown_3D_FailureEnvelope on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/100761-modifiedhoekbrown_3d_failureenvelope)
 
 
 
