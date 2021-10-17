@@ -35,11 +35,11 @@ hold on
 % figure setting
 xlabel('\sigma_{2} (MPa)')
 ylabel('\sigma_{1} (MPa)')
-set(gca,'xtick',[0:100:500],'xlim',[0,500],'ytick',[0:100:500],'ylim',[0,500])
+set(gca,'xtick',(0:100:500),'xlim',[0,500],'ytick',(0:100:500),'ylim',[0,500])
 legend([h3,h4,h2,h1],'Conventional triaxial test','True triaxial test','Best fitting envelope','Best fitting envelope','location','southeast')
 legend boxoff
 text(100,80,'\sigma_{3}=0MPa','HorizontalAlignment','left','FontSize',12,'Fontname', 'Times New Roman')
 text(240,200,'20MPa','HorizontalAlignment','left','FontSize',12,'Fontname', 'Times New Roman')
 text(300,400,'60MPa','HorizontalAlignment','left','FontSize',12,'Fontname', 'Times New Roman')
 set(gca,'FontSize',12,'Fontname', 'Times New Roman')
-set(gcf,'unit','centimeters','position',[33 14 13 10])
+set(gcf,'unit','centimeters','position',[15 10 13 10])
